@@ -1,0 +1,228 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Sun Sep 10 18:39:00 2023
+# Process ID: 4936
+# Current directory: E:/VHDL_project/N_bit_divinder/N_bit_divinder.runs/synth_1
+# Command line: vivado.exe -log n_bit_divinder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source n_bit_divinder.tcl
+# Log file: E:/VHDL_project/N_bit_divinder/N_bit_divinder.runs/synth_1/n_bit_divinder.vds
+# Journal file: E:/VHDL_project/N_bit_divinder/N_bit_divinder.runs/synth_1\vivado.jou
+# Running On: DESKTOP-GVBPSC1, OS: Windows, CPU Frequency: 2099 MHz, CPU Physical cores: 16, Host memory: 51457 MB
+#-----------------------------------------------------------
+source n_bit_divinder.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1519.172 ; gain = 165.082
+Command: read_checkpoint -auto_incremental -incremental E:/VHDL_project/N_bit_divinder/N_bit_divinder.srcs/utils_1/imports/synth_1/n_bit_divinder.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/VHDL_project/N_bit_divinder/N_bit_divinder.srcs/utils_1/imports/synth_1/n_bit_divinder.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top n_bit_divinder -part xa7a12tcpg238-2I
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xa7a12t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xa7a12t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18140
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1960.945 ; gain = 409.035
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'n_bit_divinder' [E:/VHDL_project/N_bit_divinder/N_bit_divinder.srcs/sources_1/new/n_bit_divinder.vhd:16]
+WARNING: [Synth 8-614] signal 'temp2' is read in the process but is not in the sensitivity list [E:/VHDL_project/N_bit_divinder/N_bit_divinder.srcs/sources_1/new/n_bit_divinder.vhd:22]
+WARNING: [Synth 8-614] signal 'temp1' is read in the process but is not in the sensitivity list [E:/VHDL_project/N_bit_divinder/N_bit_divinder.srcs/sources_1/new/n_bit_divinder.vhd:22]
+WARNING: [Synth 8-614] signal 'temp3' is read in the process but is not in the sensitivity list [E:/VHDL_project/N_bit_divinder/N_bit_divinder.srcs/sources_1/new/n_bit_divinder.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'n_bit_divinder' (0#1) [E:/VHDL_project/N_bit_divinder/N_bit_divinder.srcs/sources_1/new/n_bit_divinder.vhd:16]
+WARNING: [Synth 8-7129] Port a[7] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[6] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[5] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[4] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[3] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[2] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[3] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[2] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[1] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[0] in module n_bit_divinder is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2050.500 ; gain = 498.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2050.500 ; gain = 498.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xa7a12tcpg238-2I
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2050.500 ; gain = 498.590
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xa7a12tcpg238-2I
+WARNING: [Synth 8-327] inferring latch for variable 'temp2_reg' [E:/VHDL_project/N_bit_divinder/N_bit_divinder.srcs/sources_1/new/n_bit_divinder.vhd:26]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2050.500 ; gain = 498.590
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 40 (col length:40)
+BRAMs: 40 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design n_bit_divinder has port result[7] driven by constant 1
+WARNING: [Synth 8-3917] design n_bit_divinder has port result[6] driven by constant 1
+WARNING: [Synth 8-3917] design n_bit_divinder has port result[5] driven by constant 1
+WARNING: [Synth 8-3917] design n_bit_divinder has port result[4] driven by constant 1
+WARNING: [Synth 8-3917] design n_bit_divinder has port result[3] driven by constant 1
+WARNING: [Synth 8-3917] design n_bit_divinder has port result[2] driven by constant 1
+WARNING: [Synth 8-3917] design n_bit_divinder has port result[1] driven by constant 1
+WARNING: [Synth 8-3917] design n_bit_divinder has port result[0] driven by constant 1
+WARNING: [Synth 8-3917] design n_bit_divinder has port remain[3] driven by constant 0
+WARNING: [Synth 8-3917] design n_bit_divinder has port remain[2] driven by constant 0
+WARNING: [Synth 8-3917] design n_bit_divinder has port remain[1] driven by constant 0
+WARNING: [Synth 8-3917] design n_bit_divinder has port remain[0] driven by constant 0
+WARNING: [Synth 8-7129] Port a[7] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[6] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[5] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[4] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[3] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[2] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[3] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[2] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[1] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[0] in module n_bit_divinder is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (temp2_reg[7]) is unused and will be removed from module n_bit_divinder.
+WARNING: [Synth 8-3332] Sequential element (temp2_reg[6]) is unused and will be removed from module n_bit_divinder.
+WARNING: [Synth 8-3332] Sequential element (temp2_reg[5]) is unused and will be removed from module n_bit_divinder.
+WARNING: [Synth 8-3332] Sequential element (temp2_reg[4]) is unused and will be removed from module n_bit_divinder.
+WARNING: [Synth 8-3332] Sequential element (temp2_reg[3]) is unused and will be removed from module n_bit_divinder.
+WARNING: [Synth 8-3332] Sequential element (temp2_reg[2]) is unused and will be removed from module n_bit_divinder.
+WARNING: [Synth 8-3332] Sequential element (temp2_reg[1]) is unused and will be removed from module n_bit_divinder.
+WARNING: [Synth 8-3332] Sequential element (temp2_reg[0]) is unused and will be removed from module n_bit_divinder.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 2233.219 ; gain = 681.309
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 2233.219 ; gain = 681.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 2233.219 ; gain = 681.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 2233.219 ; gain = 681.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 2233.219 ; gain = 681.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 2233.219 ; gain = 681.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 2233.219 ; gain = 681.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 2233.219 ; gain = 681.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 2233.219 ; gain = 681.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |    12|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    12|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 2233.219 ; gain = 681.309
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 49 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 2233.219 ; gain = 681.309
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 2233.219 ; gain = 681.309
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2235.152 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2333.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 4e06ea4
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 49 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 2333.867 ; gain = 789.824
+INFO: [Common 17-1381] The checkpoint 'E:/VHDL_project/N_bit_divinder/N_bit_divinder.runs/synth_1/n_bit_divinder.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file n_bit_divinder_utilization_synth.rpt -pb n_bit_divinder_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 10 18:40:17 2023...

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Sun Sep 10 18:39:00 2023
+# Process ID: 4936
+# Current directory: E:/VHDL_project/N_bit_divinder/N_bit_divinder.runs/synth_1
+# Command line: vivado.exe -log n_bit_divinder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source n_bit_divinder.tcl
+# Log file: E:/VHDL_project/N_bit_divinder/N_bit_divinder.runs/synth_1/n_bit_divinder.vds
+# Journal file: E:/VHDL_project/N_bit_divinder/N_bit_divinder.runs/synth_1\vivado.jou
+# Running On: DESKTOP-GVBPSC1, OS: Windows, CPU Frequency: 2099 MHz, CPU Physical cores: 16, Host memory: 51457 MB
+#-----------------------------------------------------------
+source n_bit_divinder.tcl -notrace
